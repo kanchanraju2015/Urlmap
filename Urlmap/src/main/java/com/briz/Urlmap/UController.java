@@ -56,14 +56,14 @@ public String test1()
 	{
 		return "name is "+name;
 	}
-	/*
+	
 	@RequestMapping("/data/{name}")
 	public String getdata(@PathVariable String name)
 	{
 		// TAKES ALL INT/SMALL/CAPS/SYMBOLS EVERYTHING MULTIWORD IMPORTANT 
 		return "name is "+name;
 	}
-	*/
+	
 	@RequestMapping("path/data/show/{name:[a-z][0-9]+}")
 	public String hallo(@PathVariable String name)
 	{
