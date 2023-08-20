@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class UController
 {
-
+@RequestMapping("/test")
+	public String test()
+	{
+		return "this is test";
+	}
+	
 @RequestMapping("/path/{name:[a-z]+}")  //http://localhost:8080/path/weehousr
 	public String test1(@PathVariable("name") String name) 
 	{
